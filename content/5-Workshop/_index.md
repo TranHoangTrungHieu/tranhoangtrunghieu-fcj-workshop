@@ -1,31 +1,38 @@
 ---
 title: "Workshop"
-date: "2025-09-09T19:53:52+07:00"
+date: 2025-12-09
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
+
+{{% notice info %}}
+💡 **Project Information:** Aurora is an event-management and automated notification system built on a Serverless architecture.
 {{% /notice %}}
 
-# Secure Hybrid Access to S3 using VPC Endpoints
+# Project Aurora: Event Management & Automated Notification System
 
-#### Overview
+#### Project Overview
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+**Project Aurora** is a solution that enables users to manage schedules, create important events, and track daily tasks (Daily Worklog).  
+A key highlight of the system is its ability to integrate **automated email notifications**, reminding users when an event is about to occur.
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
+This project focuses on solving the problem of creating schedules and delivering reliable notifications without maintaining traditional servers.
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+Key features and services include:
 
-#### Content
++ **Amazon Cognito & Google Cloud:** Centralized user identity management with **Google Sign-In (OAuth 2.0)** for secure and simplified authentication.
++ **Event & Task Management:** Built using **Amazon DynamoDB** to store event details and daily task statuses.
++ **Email Notification System:** Integrated with **Resend** to deliver beautiful HTML-formatted emails to users.
++ **Logic Processing:** Implemented with **AWS Lambda** to handle workflow execution whenever a new event is created.
 
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+![Aurora Time Platform Architecture](/AWS/images/2-Proposal/aws.jpg)
+
+#### Detailed Sections
+
+1. [System Architecture & Authentication Flow](5.1-Architecture/)
+2. [Google Cloud & Amazon Cognito Configuration](5.2-Auth-Setup/)
+3. [Database Design (Events & Tasks)](5.3-Database/)
+4. [Building API & Email Logic (Lambda)](5.4-Backend-Logic/)
+5. [User Interface (Frontend)](5.5-Frontend/)
+6. [Final Results & Future Improvements](5.6-Conclusion/)
