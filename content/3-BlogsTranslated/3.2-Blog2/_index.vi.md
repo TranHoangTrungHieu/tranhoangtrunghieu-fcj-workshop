@@ -1,3 +1,10 @@
+---
+title: "Blog 1"
+date: "2025-09-09T19:53:52+07:00"
+weight: 1
+chapter: false
+pre: " <b> 3.2. </b> "
+---
 AWS Compute Blog
 Thiết Kế Các Mô Hình Tích Hợp Serverless Cho Mô Hình Ngôn Ngữ Lớn (LLMs)
 Tác giả: Chris McPeek
@@ -19,7 +26,6 @@ Hình ảnh ví dụ được tạo bằng Titan Image Generator
 Khi các tổ chức áp dụng LLMs để cung cấp năng lực cho các ứng dụng AI tạo sinh (generative AI), kiến trúc serverless mang đến một phương pháp hấp dẫn cho phát triển nhanh và mở rộng quy mô tiết kiệm chi phí.Các phần tiếp theo sẽ trình bày một số mô hình tích hợp serverless nhằm xây dựng các ứng dụng AI tạo sinh có hiệu suất cao, chi phí tối ưu, và khả năng chịu lỗi tốt.
 
 Gọi trực tiếp AWS Lambda
-
 Gọi trực tiếp đến Amazon Bedrock từ AWS Lambda
 Mô hình tích hợp serverless đơn giản nhất là gọi trực tiếp Bedrock trong Lambda bằng cách sử dụng AWS SDK. Dưới đây là ví dụ về một hàm Lambda sử dụng Python SDK (boto3), gọi đến API Bedrock InvokeModel.
 
@@ -90,7 +96,18 @@ Liên kết chuỗi prompt bằng AWS Step Functions
 4.Đầu ra của mỗi yêu cầu suy luận (inference request) tiếp tục được truyền giữa các bước trong quy trình làm việc (workflow). 
 5.Bước cuối cùng thực hiện một yêu cầu suy luận và kết quả cuối cùng được trả về như đầu ra của máy trạng thái.
 Một lợi thế khác khi sử dụng AWS Step Functions để gọi LLM là cơ chế xử lý lỗi tích hợp sẵn. Step Functions có thể được thiết lập để tự động thử lại khi retry on error và cho phép bạn cấu hình tỷ lệ backoff cũng như thêm jitter để giúp kiểm soát việc giới hạn tần suất (throttling). Không cần viết mã tùy chỉnh nào.
+Việc thực hiện prompt chaining bên trong một hàm Lambda duy nhất có thể tốn nhiều thời gian và trong một số trường hợp có thể vượt quá giới hạn thời gian tối đa của Lambda là 15 phút. AWS Step Functions có thể được sử dụng để giải quyết vấn đề này bằng cách điều phối (orchestrate) các lệnh gọi đến LLM.Bedrock có tích hợp được tối ưu hóa(optimized intergration) cho Step Functions, cho phép bạn sử dụng chế độ Run as Job (.sync). Mô hình tích hợp này có nghĩa là Step Functions sẽ chờ cho đến khi yêu cầu InvokeModel hoàn tất trước khi chuyển sang trạng thái tiếp theo.Với Step Functions Standard Workflows, bạn chỉ phải trả phí cho mỗi lần chuyển trạng thái (state transition), điều này giúp giảm chi phí so với việc Lambda phải chờ trong trạng thái không hoạt động.
+Ví dụ dưới đây minh họa cách liên kết chuỗi prompt với Step Functions chỉ bằng các tích hợp trực tiếp. Ví dụ này loại bỏ nhu cầu sử dụng mã tùy chỉnh trong Lambda.
 
+
+
+Liên kết chuỗi prompt bằng AWS Step Functions
+1.Dữ liệu đầu vào của người dùng (mô tả phương tiện) được truyền đến Amazon Bedrock thông qua tích hợp tối ưu (optimized intergration) của Step Functions.
+2.Kết quả được tạo ra từ lệnh gọi API InvokeModel được truyền qua ResultPath đến bước kế tiếp.
+3.Máy trạng thái (state machine) thiết lập đầu vào cho bước tiếp theo dựa trên đầu ra của bước trước đó bằng cách sử dụng Pass state.
+4.Đầu ra của mỗi yêu cầu suy luận (inference request) tiếp tục được truyền giữa các bước trong quy trình làm việc (workflow). 
+5.Bước cuối cùng thực hiện một yêu cầu suy luận và kết quả cuối cùng được trả về như đầu ra của máy trạng thái.
+Một lợi thế khác khi sử dụng AWS Step Functions để gọi LLM là cơ chế xử lý lỗi tích hợp sẵn. Step Functions có thể được thiết lập để tự động thử lại khi retry on error và cho phép bạn cấu hình tỷ lệ backoff cũng như thêm jitter để giúp kiểm soát việc giới hạn tần suất (throttling). Không cần viết mã tùy chỉnh nào.
 
 Các tùy chọn xử lý lỗi tích hợp sẵn cho một hành động trong quy trình làm việc AWS Step Functions
 Việc xử lý giới hạn tần suất (throttling) đặc biệt quan trọng khi bạn đang tiến gần đến các giới hạn dịch vụ (service quota) của Bedrock, chẳng hạn như số lượng yêu cầu được xử lý mỗi phút đối với một mô hình cụ thể.Hãy lưu ý rằng một số giới hạn là giới hạn cố định (hard limits) và không thể điều chỉnh.Tham khảo service quotas documation của Bedrock để biết thông tin mới nhất.
