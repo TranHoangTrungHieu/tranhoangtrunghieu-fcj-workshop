@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Frontend &amp; API Gateway on Internship Report</title><link>https://tranhoangtrunghieu.github.io/tranhoangtrunghieu-fcj-workshop/5-workshop/5.5-frontend/</link><description>Recent content in Frontend &amp; API Gateway on Internship Report</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://tranhoangtrunghieu.github.io/tranhoangtrunghieu-fcj-workshop/5-workshop/5.5-frontend/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploy Amplify &amp; Integration</title><link>https://tranhoangtrunghieu.github.io/tranhoangtrunghieu-fcj-workshop/5-workshop/5.5-frontend/5.5.2-amplify/-index/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://tranhoangtrunghieu.github.io/tranhoangtrunghieu-fcj-workshop/5-workshop/5.5-frontend/5.5.2-amplify/-index/</guid><description>&lt;h1 id="1-deploy-frontend-with-amplify">1. Deploy Frontend with Amplify&lt;/h1>
+&lt;ol>
+&lt;li>Go to &lt;strong>AWS Amplify&lt;/strong> &amp;gt; &lt;strong>Create new app&lt;/strong>.&lt;/li>
+&lt;li>Select &lt;strong>GitHub&lt;/strong> &amp;gt; Select the Repository containing your React code.&lt;/li>
+&lt;li>&lt;strong>Build settings:&lt;/strong> Amplify automatically detects &lt;code>npm run build&lt;/code>.&lt;/li>
+&lt;li>Click &lt;strong>Save and Deploy&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>&lt;strong>Illustration:&lt;/strong>
+&lt;img alt="Screenshot: Amplify Deploy Successful" src="images/amplify-success.png">&lt;/p>
+&lt;/blockquote></description></item></channel></rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Báo cáo thực tập</title><link>https://tranhoangtrunghieu.github.io/tranhoangtrunghieu-fcj-workshop/vi/</link><description>Recent content on Báo cáo thực tập</description><generator>Hugo</generator><language>vi</language><lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://tranhoangtrunghieu.github.io/tranhoangtrunghieu-fcj-workshop/vi/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploy Amplify &amp; Tích hợp</title><link>https://tranhoangtrunghieu.github.io/tranhoangtrunghieu-fcj-workshop/vi/5-workshop/5.5-frontend/5.5.2-amplify/-index/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://tranhoangtrunghieu.github.io/tranhoangtrunghieu-fcj-workshop/vi/5-workshop/5.5-frontend/5.5.2-amplify/-index/</guid><description>&lt;h1 id="1-deploy-frontend-với-amplify">1. Deploy Frontend với Amplify&lt;/h1>
+&lt;ol>
+&lt;li>Truy cập &lt;strong>AWS Amplify&lt;/strong> &amp;gt; &lt;strong>Create new app&lt;/strong>.&lt;/li>
+&lt;li>Chọn &lt;strong>GitHub&lt;/strong> &amp;gt; Chọn Repo chứa code React của bạn.&lt;/li>
+&lt;li>&lt;strong>Build settings:&lt;/strong> Amplify tự động nhận diện &lt;code>npm run build&lt;/code>.&lt;/li>
+&lt;li>Bấm &lt;strong>Save and Deploy&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>&lt;strong>Hình ảnh:&lt;/strong>
+&lt;img alt="Screenshot: Amplify Deploy thành công" src="../AWS/images/5-Workshop/amplify.png">&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
