@@ -23,7 +23,7 @@ Các tính năng và dịch vụ chính:
 + **Quản lý Sự kiện & Task:** Sử dụng **Amazon DynamoDB** để lưu trữ thông tin sự kiện và trạng thái công việc hàng ngày.
 + **Gửi Email thông báo:** Tích hợp **Resend**  để gửi email nội dung HTML đẹp mắt đến người dùng.
 + **Xử lý Logic:** Sử dụng **AWS Lambda** để xử lý luồng dữ liệu khi tạo sự kiện mới.
- ![Aurora Time Platform Architecture](/images/2-Proposal/aurora-architecture.jpeg)
+ ![Aurora Time Platform Architecture](images/2-Proposal/aurora-architecture.jpeg)
 #### Nội dung chi tiết
 
 1. [Kiến trúc hệ thống & Luồng xác thực (Auth Flow)](5.1-Architecture/)
