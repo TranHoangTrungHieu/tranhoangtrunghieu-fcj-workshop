@@ -16,7 +16,7 @@ pre: " <b> 5.4.2. </b> "
 * **Mô tả:** API xử lý CRUD cho bảng todo.
 
 > **Hình ảnh:**
-> ![Screenshot: Tạo hàm Aurora_TodoHandler](/AWS/images/5-Workshop/lambdaTodo.png)
+> ![Screenshot: Tạo hàm Aurora_TodoHandler](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/lambdaTodo.png)
 
 # Bước 2: Cấu hình IAM Role (Full Access to Events)
 Chúng ta cần cấp toàn quyền cloudWatch trên bảng `todo`.

@@ -19,7 +19,7 @@ pre: " <b> 5.6.1. </b> "
 5. **Stage:** Keep the default `$default` (Auto-deploy). Click **Create**.
 
 > **Illustration:**
-> ![Screenshot: Create HTTP API Gateway](/AWS/images/5-Workshop/createApi.png)
+> ![Screenshot: Create HTTP API Gateway](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/createApi.png)
 
 # Step 2: Connect Lambda (Integrations)
 
@@ -31,7 +31,7 @@ We need to declare which Lambda functions this API will point to (created in sec
 4. Repeat for other functions (`auroratimeTodo`, etc.).
 
 > **Illustration:**
-> ![Screenshot: Create Integration pointing to Lambda](/AWS/images/5-Workshop/interation.png)
+> ![Screenshot: Create Integration pointing to Lambda](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/interation.png)
 
 # Step 3: Create Routes
 
@@ -44,7 +44,7 @@ We need to declare which Lambda functions this API will point to (created in sec
     *(Note: Action logic can be handled inside the Lambda code or further divided by more detailed routes.)*
 
 > **Illustration:**
-> ![Screenshot: API Routes List](/AWS/images/5-Workshop/routes.png)
+> ![Screenshot: API Routes List](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/routes.png)
 
 # Step 4: Configure CORS (Important)
 
@@ -56,7 +56,7 @@ To allow the Frontend (Amplify) to call the API, enable CORS:
 5. Click **Save**.
 
 > **Illustration:**
-> ![Screenshot: Configure CORS for API Gateway](/AWS/images/5-Workshop/cors.png)
+> ![Screenshot: Configure CORS for API Gateway](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/cors.png)
 
 # Step 5: Configure Authentication (JWT Authorizer)
 
@@ -72,5 +72,5 @@ This step secures the API. Only requests with a Cognito token are allowed.
 8. **Attach Authorizer:** Go back to the **Attach authorizers to routes** tab, select routes (`/events`, `/todos`, …) and assign `CognitoAuth` to them.
 
 > **Illustration:**
-> ![Screenshot: Assign JWT Authorizer to Route](/AWS/images/5-Workshop/authorize.png)
-> > ![Screenshot: Assign JWT Authorizer to Route](/AWS/images/5-Workshop/addAutho.png)
+> ![Screenshot: Assign JWT Authorizer to Route](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/authorize.png)
+> > ![Screenshot: Assign JWT Authorizer to Route](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/addAutho.png)

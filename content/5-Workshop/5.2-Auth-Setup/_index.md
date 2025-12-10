@@ -21,7 +21,7 @@ Go to **Credentials** → **Create Credentials** → **OAuth client ID**.
 
 > **Screenshot:**
 >
-> ![Screenshot: Creating Client ID and Secret](/AWS/images/5-Workshop/ggAuthen.png)  
+> ![Screenshot: Creating Client ID and Secret](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/ggAuthen.png)  
 > *Figure 5.2.2: Creating OAuth Client ID and Client Secret.*
 
 {{% notice warning %}}

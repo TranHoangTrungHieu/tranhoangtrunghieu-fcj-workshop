@@ -16,7 +16,7 @@ pre: " <b> 5.4.2. </b> "
 * **Description:** API that handles CRUD operations for the Todo table.
 
 > **Image:**
-> ![Screenshot: Create Aurora_EventHandler](/AWS/images/5-Workshop/lambdaTodo.png)
+> ![Screenshot: Create Aurora_EventHandler](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/lambdaTodo.png)
 
 # Step 2: Configure IAM Role (Full Access to Todo)
 We need to grant full CloudWatch and DynamoDB access to the `todo` table.

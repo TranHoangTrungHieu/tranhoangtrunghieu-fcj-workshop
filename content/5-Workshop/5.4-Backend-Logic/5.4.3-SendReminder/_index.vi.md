@@ -19,7 +19,7 @@ Hàm này cần thời gian chạy lâu hơn bình thường một chút vì ph�
 
 > **Hình ảnh thực hiện:**
 >
-> ![Screenshot: Tạo hàm SendReminder ](/AWS/images/5-Workshop/lambdaSend.png)
+> ![Screenshot: Tạo hàm SendReminder ](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/lambdaSend.png)
 > *Hình 5.4.3.1: Cấu hình hàm xử lý tác vụ nền (Background Job).*
 
 ---

@@ -19,7 +19,7 @@ This function requires a slightly longer execution time since it needs to scan t
 
 > **Illustration:**
 >
-> ![Screenshot: Create SendReminder Function](/AWS/images/5-Workshop/lambdaSend.png)  
+> ![Screenshot: Create SendReminder Function](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/lambdaSend.png)  
 > *Figure 5.4.3.1: Configuring the background job Lambda function.*
 
 ---

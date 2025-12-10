@@ -16,7 +16,7 @@ pre: " <b> 5.4.1. </b> "
 * **Mô tả:** API xử lý CRUD cho bảng Events.
 
 > **Hình ảnh:**
-> ![Screenshot: Tạo hàm Aurora_EventHandler](/AWS/images/5-Workshop/lambdaEvent.png)
+> ![Screenshot: Tạo hàm Aurora_EventHandler](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/lambdaEvent.png)
 
 # Bước 2: Cấu hình IAM Role (Full Access to Events)
 Chúng ta cần cấp toàn quyền cloudWatch trên bảng `events`.

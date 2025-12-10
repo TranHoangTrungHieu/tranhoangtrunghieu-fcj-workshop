@@ -19,7 +19,7 @@ pre: " <b> 5.4.0. </b> "
 5. Bấm **Add**. Resend sẽ cung cấp cho bạn 3 loại bản ghi DNS (MX, SPF, DKIM).
 
 > **Hình ảnh:**
-> ![Screenshot: Bảng DNS Records do Resend cung cấp](/AWS/images/5-Workshop/resend.png)
+> ![Screenshot: Bảng DNS Records do Resend cung cấp](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/resend.png)
 
 # Bước 2: Cấu hình DNS trên AWS Route 53
 
@@ -37,9 +37,9 @@ Chúng ta cần copy các bản ghi từ Resend và dán vào Route 53.
     * *Lưu ý:* Nếu Record name có đuôi là domain , trong Route 53 bạn chỉ cần điền `bounces` (vì Route 53 tự điền đuôi domain).
 
 > **Hình ảnh:**
-> ![Screenshot: Tạo Record trong Route 53](/AWS/images/5-Workshop/record1.png)
-> > ![Screenshot: Tạo Record trong Route 53](/AWS/images/5-Workshop/record2.png)
-> > ![Screenshot: Tạo Record trong Route 53](/AWS/images/5-Workshop/record3.png)
+> ![Screenshot: Tạo Record trong Route 53](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/record1.png)
+> > ![Screenshot: Tạo Record trong Route 53](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/record2.png)
+> > ![Screenshot: Tạo Record trong Route 53](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/record3.png)
 
 # Bước 3: Xác thực và Lấy API Key
 
@@ -49,12 +49,12 @@ Chúng ta cần copy các bản ghi từ Resend và dán vào Route 53.
 4. Đặt tên  và chọn quyền **Sending access**.
 5. **Copy và lưu trữ API Key này cẩn thận** .
    > **Hình ảnh:**
-> ![Screenshot: Tạo api key](/AWS/images/5-Workshop/apiKey.png)
+> ![Screenshot: Tạo api key](/Atranhoangtrunghieu-fcj-workshopS/images/5-Workshop/apiKey.png)
 >    > **Hình ảnh:**
-> ![Screenshot: Copy API key](/AWS/images/5-Workshop/key.png)
+> ![Screenshot: Copy API key](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/key.png)
 
 > **Hình ảnh:**
-> ![Screenshot: Resend báo Verified thành công](/AWS/images/5-Workshop/resend.png)
+> ![Screenshot: Resend báo Verified thành công](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/resend.png)
 
 {{% notice tip %}}
 💡 **Lưu ý:** Việc cấu hình này giúp tăng độ uy tín (Reputation) cho domain của bạn, đảm bảo email thông báo từ hệ thống Aurora sẽ vào **Inbox** thay vì **Spam**.
