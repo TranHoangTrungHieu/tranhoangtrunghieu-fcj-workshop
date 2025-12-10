@@ -19,7 +19,7 @@ pre: " <b> 5.6.1. </b> "
 5. **Stage:** Để mặc định `$default` (Auto-deploy). Bấm **Create**.
 
 > **Hình ảnh:**
-> ![Screenshot: Tạo HTTP API Gateway](images/5-Workshop/createApi.png)
+> ![Screenshot: Tạo HTTP API Gateway](/images/5-Workshop/createApi.png)
 
 # Bước 2: Kết nối Lambda (Integrations)
 
@@ -31,7 +31,7 @@ Chúng ta cần khai báo API này sẽ trỏ đến các hàm Lambda nào (đã
 4. Làm tương tự cho các hàm khác (`auroratimeTodo`, v.v...).
 
 > **Hình ảnh:**
-> ![Screenshot: Tạo Integration trỏ vào Lambda](images/5-Workshop/interation.png)
+> ![Screenshot: Tạo Integration trỏ vào Lambda](/images/5-Workshop/interation.png)
 
 # Bước 3: Tạo Routes (Đường dẫn)
 
@@ -44,7 +44,7 @@ Chúng ta cần khai báo API này sẽ trỏ đến các hàm Lambda nào (đã
     *(Lưu ý: Logic phân chia action nằm trong code Lambda hoặc chia route chi tiết hơn tùy bạn)*
 
 > **Hình ảnh:**
-> ![Screenshot: Danh sách Routes API](images/5-Workshop/routes.png)
+> ![Screenshot: Danh sách Routes API](/images/5-Workshop/routes.png)
 
 # Bước 4: Cấu hình CORS (Quan trọng)
 
@@ -56,7 +56,7 @@ Chúng ta cần khai báo API này sẽ trỏ đến các hàm Lambda nào (đã
 5. Bấm **Save**.
 
 > **Hình ảnh:**
-> ![Screenshot: Cấu hình CORS cho API Gateway](images/5-Workshop/cors.png)
+> ![Screenshot: Cấu hình CORS cho API Gateway](/images/5-Workshop/cors.png)
 
 # Bước 5: Cấu hình Authentication (JWT Authorizer)
 
@@ -72,5 +72,5 @@ Chúng ta cần khai báo API này sẽ trỏ đến các hàm Lambda nào (đã
 8. **Gán Authorizer:** Quay lại tab **Attach authorizers to routes**, chọn các route (`/events`, `/todos`...) và gán `CognitoAuth` cho chúng.
 
 > **Hình ảnh:**
-> ![Screenshot: Gán JWT Authorizer cho Route](images/5-Workshop/authorize.png)
-> > ![Screenshot: Gán JWT Authorizer cho Route](images/5-Workshop/addAutho.png)
+> ![Screenshot: Gán JWT Authorizer cho Route](/images/5-Workshop/authorize.png)
+> > ![Screenshot: Gán JWT Authorizer cho Route](/images/5-Workshop/addAutho.png)

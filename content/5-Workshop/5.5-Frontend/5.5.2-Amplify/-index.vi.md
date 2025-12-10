@@ -14,5 +14,5 @@ pre: " <b> 5.6.2. </b> "
 4. Bấm **Save and Deploy**.
 
 > **Hình ảnh:**
->![Screenshot: Amplify Deploy thành công](images/5-Workshop/amplify.png)
->![Screenshot: Amplify Deploy thành công](images/5-Workshop/amplify1.png)
+>![Screenshot: Amplify Deploy thành công](/images/5-Workshop/amplify.png)
+>![Screenshot: Amplify Deploy thành công](/images/5-Workshop/amplify1.png)

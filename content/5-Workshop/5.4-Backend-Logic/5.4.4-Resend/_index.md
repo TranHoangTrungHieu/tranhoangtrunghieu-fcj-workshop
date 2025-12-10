@@ -19,9 +19,9 @@ pre: " <b> 5.4.0. </b> "
 5. Click **Add**. Resend will provide you with three types of DNS records (MX, SPF, DKIM).
 
 > **Illustration:**
-> ![Screenshot: DNS Records provided by Resend](images/5-Workshop/record1.png)
-> > ![Screenshot: DNS Records provided by Resend](images/5-Workshop/record2.png)
-> > ![Screenshot: DNS Records provided by Resend](images/5-Workshop/record3.png)
+> ![Screenshot: DNS Records provided by Resend](/images/5-Workshop/record1.png)
+> > ![Screenshot: DNS Records provided by Resend](/images/5-Workshop/record2.png)
+> > ![Screenshot: DNS Records provided by Resend](/images/5-Workshop/record3.png)
 
 # Step 2: Configure DNS in AWS Route 53
 
@@ -39,7 +39,7 @@ We need to copy the DNS records from Resend and add them to Route 53.
     * *Note:* If the Record name ends with your domain, in Route 53 you only need to enter the prefix (e.g., `bounces`), because Route 53 will automatically append the domain.
 
 > **Illustration:**
-> ![Screenshot: Creating a Record in Route 53](images/route53-create-record.png)
+> ![Screenshot: Creating a Record in Route 53](/images/route53-create-record.png)
 
 # Step 3: Verify and Get API Key
 
@@ -49,12 +49,12 @@ We need to copy the DNS records from Resend and add them to Route 53.
 4. Name your key and select **Sending access**.
 5. **Copy and store this API Key securely** 
    > **Image:**
-> ![Screenshot: Create API key](images/5-Workshop/apiKey.png)
+> ![Screenshot: Create API key](/images/5-Workshop/apiKey.png)
 >    > **Image:**
 > ![Screenshot: Copy API key](/Atranhoangtrunghieu-fcj-workshopS/images/5-Workshop/key.png)
 
 > **Illustration:**
-> ![Screenshot: Resend showing successful verification](images/5-Workshop/resend.png)
+> ![Screenshot: Resend showing successful verification](/images/5-Workshop/resend.png)
 
 {{% notice tip %}}
 💡 **Tip:** This DNS configuration improves your domain's reputation, ensuring that system emails from Aurora land in the **Inbox** instead of **Spam**.
