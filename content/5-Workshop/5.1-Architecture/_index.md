@@ -15,7 +15,7 @@ pre: " <b> 5.1. </b> "
 The **Aurora** system is built entirely on a **Serverless architecture** on AWS, optimizing both scalability and operational cost.  
 It integrates with **Google Cloud Platform** to provide a seamless Single Sign-On (SSO) experience via Google authentication.
 
-![Aurora Architecture Diagram](/images/2-Proposal/aurora-architecture.jpeg)  
+![Aurora Architecture Diagram](/tranhoangtrunghieu-fcj-workshop/images/2-Proposal/aurora-architecture.jpeg)  
 
 ### Main Components:
 

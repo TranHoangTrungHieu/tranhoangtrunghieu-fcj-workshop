@@ -19,7 +19,7 @@ This function requires a slightly longer execution time since it needs to scan t
 
 > **Illustration:**
 >
-> ![Screenshot: Create SendReminder Function](/images/5-Workshop/lambdaSend.png)  
+> ![Screenshot: Create SendReminder Function](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/lambdaSend.png)  
 > *Figure 5.4.3.1: Configuring the background job Lambda function.*
 
 ---
@@ -52,5 +52,5 @@ This function requires a slightly longer execution time since it needs to scan t
 ## Step 3: Implementation Code (Node.js)
 Return to the Lambda Function interface, where we will write Node.js code to scan for upcoming events and send reminder emails via a third-party API.
 > **Image:**
-> ![Screenshot: Create code](/images/5-Workshop/codeSend.png)
+> ![Screenshot: Create code](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/codeSend.png)
 After completing the code, click **Deploy** to save it.
