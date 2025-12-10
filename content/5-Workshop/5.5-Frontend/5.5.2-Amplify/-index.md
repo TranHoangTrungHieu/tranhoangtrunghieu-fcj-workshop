@@ -14,4 +14,5 @@ pre: " <b> 5.6.2. </b> "
 4. Click **Save and Deploy**.
 
 > **Illustration:**
-> ![Screenshot: Amplify Deploy Successful](images/amplify-success.png)
+> ![Screenshot: Amplify Deploy Successful](/AWS/images/5-Workshop/amplify.png)
+> > ![Screenshot: Amplify Deploy Successful](/AWS/images/5-Workshop/amplify1.png)

@@ -62,7 +62,7 @@ Navigate to **DynamoDB → Tables → Create table**.
 * **Sort key:** `eventId` (String)
 
 > **Screenshot:**  
-> ![Screenshot: Creating AuroraEvents table](images/dynamodb-create-event.png)
+> ![Screenshot: Creating AuroraEvents table](/AWS/images/5-Workshop/dbEvent.png)
 
 ---
 
@@ -75,7 +75,7 @@ Repeat the process to create the Tasks table.
 * **Sort key:** `todoId` (String)
 
 > **Screenshot:**  
-> ![Screenshot: Creating AuroraTasks table](images/dynamodb-create-task.png)
+> ![Screenshot: Creating AuroraTasks table](/AWS/images/5-Workshop/dbTodo.png)
 
 ---
 
@@ -87,5 +87,5 @@ Finally, create the Users table.
 * **Partition key:** `userId` (String)
 
 > **Screenshot:**  
-> ![Screenshot: Creating Users table](images/dynamodb-create-task.png)
+> ![Screenshot: Creating Users table](/AWS/images/5-Workshop/dbUser.png)
 

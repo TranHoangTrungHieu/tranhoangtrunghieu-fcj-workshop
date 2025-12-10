@@ -21,7 +21,7 @@ Tiếp theo, vào mục **Credentials** > **Create Credentials** > **OAuth clien
 
 > **Hình ảnh thực hiện:**
 >
-> ![Screenshot: Màn hình tạo Client ID và Secret](images/gcp-credentials.png)
+> ![Screenshot: Màn hình tạo Client ID và Secret](/AWS/images/5-Workshop/ggAuthen.png)
 > *Hình 5.2.2: Tạo OAuth Client ID và Client Secret.*
 
 {{% notice warning %}}
@@ -41,7 +41,7 @@ Chúng ta điền **Client ID** và **Client Secret** đã lấy từ bước tr
 
 > **Hình ảnh thực hiện:**
 >
-> ![Screenshot: Cấu hình Google Identity Provider trong Cognito](images/cognito-idp-google.png)
+> ![Screenshot: Cấu hình Google Identity Provider trong Cognito](/AWS/images/5-Workshop/provider.png)
 > *Hình 5.2.3: Nhập thông tin xác thực Google vào Cognito.*
 
 
@@ -55,7 +55,8 @@ Cuối cùng, tại phần **App integration**:
 
 > **Hình ảnh thực hiện:**
 >
-> ![Screenshot: Cấu hình App Client Settings](images/cognito-app-client.png)
+> ![Screenshot: Cấu hình App Client Settings](/AWS/images/5-Workshop/cauhinh1.png)
+> > ![Screenshot: Cấu hình App Client Settings](/AWS/images/5-Workshop/cauhinh2.png)
 > *Hình 5.2.5: Cấu hình Redirect URL và OAuth Scopes.*
 
 ---
@@ -66,5 +67,5 @@ Cuối cùng, tại phần **App integration**:
 
 > **Hình ảnh thực hiện:**
 >
-> ![Screenshot: Giao diện đăng nhập có nút Google](images/hosted-ui-login.png)
+> ![Screenshot: Giao diện đăng nhập có nút Google](/AWS/images/5-Workshop/UI.png)
 > *Hình 5.2.6: Giao diện đăng nhập tích hợp Google thành công.*

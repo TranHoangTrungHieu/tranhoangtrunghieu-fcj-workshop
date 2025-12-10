@@ -12,11 +12,11 @@ pre: " <b> 5.4.1. </b> "
 
 # Bước 1: Tạo Lambda Function
 * **Tên hàm:** `auroraTimeEvent`
-* **Runtime:** Node.js 18.x
+* **Runtime:** Node.js 24.x
 * **Mô tả:** API xử lý CRUD cho bảng Events.
 
 > **Hình ảnh:**
-> ![Screenshot: Tạo hàm Aurora_EventHandler](images/lambda-event-create.png)
+> ![Screenshot: Tạo hàm Aurora_EventHandler](/AWS/images/5-Workshop/lambdaEvent.png)
 
 # Bước 2: Cấu hình IAM Role (Full Access to Events)
 Chúng ta cần cấp toàn quyền cloudWatch trên bảng `events`.
@@ -64,4 +64,6 @@ Chúng ta cần cấp toàn quyền cloudWatch trên bảng `events`.
 ```
 ## Bước 3: Code xử lý (Node.js) 
 Quay trở lại giao diện Lambda Function, chúng ta sẽ viết code Node.js để xử lý các thao tác CRUD.
+> **Hình ảnh:**
+> ![Screenshot: Tạo code](/AWS/images/5-Workshop/codeEvent.png)
 Sau khi hoàn thành, bấm **Deploy** để lưu lại.

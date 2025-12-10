@@ -15,3 +15,4 @@ pre: " <b> 5.6.2. </b> "
 
 > **Hình ảnh:**
 >![Screenshot: Amplify Deploy thành công](/AWS/images/5-Workshop/amplify.png)
+>![Screenshot: Amplify Deploy thành công](/AWS/images/5-Workshop/amplify1.png)

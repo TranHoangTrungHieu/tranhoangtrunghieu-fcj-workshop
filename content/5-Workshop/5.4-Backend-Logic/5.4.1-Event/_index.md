@@ -16,7 +16,7 @@ pre: " <b> 5.4.1. </b> "
 * **Description:** API for handling CRUD operations for the Events table.
 
 > **Image:**
-> ![Screenshot: Create Aurora_EventHandler Function](images/lambda-event-create.png)
+> ![Screenshot: Create Aurora_EventHandler Function](/AWS/images/5-Workshop/lambdaEvent.png)
 
 # Step 2: Configure IAM Role (Full Access to Events)
 We need to grant full read/write permissions on the `events` table.
@@ -65,4 +65,6 @@ We need to grant full read/write permissions on the `events` table.
 ```
 # Step 3: Processing code (Node.js)
 Back to the Lambda Function interface, we will write Node.js code to process CRUD operations.
+> **Hình ảnh:**
+> ![Screenshot: Create code](/AWS/images/5-Workshop/codeEvent.png)
 After completing, click **Deploy** to save.

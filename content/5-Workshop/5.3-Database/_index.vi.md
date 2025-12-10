@@ -55,7 +55,7 @@ Truy cập **DynamoDB** > **Tables** > **Create table**.
 
 > **Hình ảnh thực hiện:**
 >
-> ![Screenshot: Màn hình tạo bảng AuroraEvents](images/dynamodb-create-event.png)
+> ![Screenshot: Màn hình tạo bảng AuroraEvents](/AWS/images/5-Workshop/dbEvent.png)
 > 
 
 ### Bước 2: Tạo bảng Tasks
@@ -66,7 +66,7 @@ Tương tự, tạo bảng thứ hai cho Task.
 
 > **Hình ảnh thực hiện:**
 >
-> ![Screenshot: Màn hình tạo bảng AuroraTasks](images/dynamodb-create-task.png)
+> ![Screenshot: Màn hình tạo bảng AuroraTasks](/AWS/images/5-Workshop/dbTodo.png)
 > 
 >
 > ### Bước 3: Tạo bảng Users
@@ -76,7 +76,7 @@ Tương tự, tạo bảng thứ ba cho User.
 
 > **Hình ảnh thực hiện:**
 >
-> ![Screenshot: Màn hình tạo bảng AuroraTasks](images/dynamodb-create-task.png)
+> ![Screenshot: Màn hình tạo bảng User](/AWS/images/5-Workshop/dbUser.png)
 > 
 
 }

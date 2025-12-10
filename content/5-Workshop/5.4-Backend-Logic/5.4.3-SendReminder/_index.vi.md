@@ -15,11 +15,11 @@ pre: " <b> 5.4.3. </b> "
 Hàm này cần thời gian chạy lâu hơn bình thường một chút vì phải quét dữ liệu và chờ phản hồi từ API Mail, nên chúng ta sẽ tăng Timeout.
 
 1.  **Tên hàm:** `sendReminder`
-2.  **Runtime:** Node.js 18.x
+2.  **Runtime:** Node.js 24.x
 
 > **Hình ảnh thực hiện:**
 >
-> ![Screenshot: Tạo hàm SendReminder ](images/lambda-reminder-create.png)
+> ![Screenshot: Tạo hàm SendReminder ](/AWS/images/5-Workshop/lambdaSend.png)
 > *Hình 5.4.3.1: Cấu hình hàm xử lý tác vụ nền (Background Job).*
 
 ---
@@ -50,7 +50,9 @@ Hàm này cần thời gian chạy lâu hơn bình thường một chút vì ph�
 }   ```
 ```
 ## Bước 3: Code xử lý (Node.js)
-Quay trở lại giao diện Lambda Function, chúng ta sẽ viết code Node.js để quét dữ liệu sự kiện sắp diễn ra và gửi email nhắc nhở qua API bên thứ 3.
+Quay trở lại giao diện Lambda Function, chúng ta sẽ viết code Node.js để quét dữ liệu sự kiện sắp diễn ra và gửi email nhắc nhở qua API bên thứ 3
+> **Hình ảnh:**
+> ![Screenshot: Tạo code](/AWS/images/5-Workshop/codeSend.png)
 Sau khi hoàn thành, bấm **Deploy** để lưu lại.
 
 ```

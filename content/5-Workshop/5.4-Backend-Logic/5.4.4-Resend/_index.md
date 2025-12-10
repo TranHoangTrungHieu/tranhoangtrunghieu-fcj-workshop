@@ -19,7 +19,9 @@ pre: " <b> 5.4.0. </b> "
 5. Click **Add**. Resend will provide you with three types of DNS records (MX, SPF, DKIM).
 
 > **Illustration:**
-> ![Screenshot: DNS Records provided by Resend](images/resend-dns-records.png)
+> ![Screenshot: DNS Records provided by Resend](/AWS/images/5-Workshop/record1.png)
+> > ![Screenshot: DNS Records provided by Resend](/AWS/images/5-Workshop/record2.png)
+> > ![Screenshot: DNS Records provided by Resend](/AWS/images/5-Workshop/record3.png)
 
 # Step 2: Configure DNS in AWS Route 53
 
@@ -45,10 +47,14 @@ We need to copy the DNS records from Resend and add them to Route 53.
 2. Wait around 1–5 minutes until the status turns **Verified** (Green).
 3. Go to **API Keys** > **Create API Key**.
 4. Name your key and select **Sending access**.
-5. **Copy and store this API Key securely** (We will use it in the Lambda code in later sections).
+5. **Copy and store this API Key securely** 
+   > **Image:**
+> ![Screenshot: Create API key](/AWS/images/5-Workshop/apiKey.png)
+>    > **Image:**
+> ![Screenshot: Copy API key](/AWS/images/5-Workshop/key.png)
 
 > **Illustration:**
-> ![Screenshot: Resend showing successful verification](images/resend-verified.png)
+> ![Screenshot: Resend showing successful verification](/AWS/images/5-Workshop/resend.png)
 
 {{% notice tip %}}
 💡 **Tip:** This DNS configuration improves your domain's reputation, ensuring that system emails from Aurora land in the **Inbox** instead of **Spam**.

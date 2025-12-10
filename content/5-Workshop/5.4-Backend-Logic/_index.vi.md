@@ -22,7 +22,7 @@ pre: " <b> 5.4. </b> "
 
 > **Hình ảnh thực hiện:**
 >
-> ![Screenshot: Màn hình khởi tạo Lambda Function](images/step1-create-lambda.png)
+> ![Screenshot: Màn hình khởi tạo Lambda Function](/AWS/images/5-Workshop/lambda.png)
 > *Hình 5.4.1: Khởi tạo hàm xử lý Backend.*
 
 ---
@@ -36,7 +36,7 @@ Mặc định khi tạo, Lambda sẽ tự động tạo một IAM Role cơ bản
 
 > **Hình ảnh thực hiện:**
 >
-> ![Screenshot: Truy cập vào Execution Role từ Lambda](images/step2-access-role.png)
+> ![Screenshot: Truy cập vào Execution Role từ Lambda](/AWS/images/5-Workshop/role.png)
 > *Hình 5.4.2: Truy cập IAM Role để cấu hình quyền hạn.*
 > # Bước 3: Add Policies để kết nối DB
 
@@ -46,7 +46,9 @@ Vì chúng ta sử dụng dịch vụ Email bên thứ 3 (gọi qua API HTTP th�
 2. Chọn chế độ **JSON**
 3. Bấm Next, đặt tên Policy là AuroraDB_Access_Policy và bấm Create policy
 4. Kiểm tra lại danh sách Permissions, đảm bảo Role đã có quyền truy cập DynamoDB
+![Screenshot: Truy cập vào add policy từ Lambda](/AWS/images/5-Workshop/permission.png)
+> *Hình 5.4.2:  cấu hình policy.*
 # Bước 4: Viết Code cho hàm Lambda
 Quay trở lại giao diện Lambda Function, chúng ta sẽ viết code Node.js.
-
+![Screenshot: Truy cập vào để viết code](/AWS/images/5-Workshop/code.png)
 Sau khi hoàn thành, bấm **Deploy** để lưu lại.
