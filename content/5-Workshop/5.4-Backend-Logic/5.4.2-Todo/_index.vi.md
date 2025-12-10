@@ -16,7 +16,7 @@ pre: " <b> 5.4.2. </b> "
 * **Mô tả:** API xử lý CRUD cho bảng todo.
 
 > **Hình ảnh:**
-> ![Screenshot: Tạo hàm Aurora_TodoHandler](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/lambdaTodo.png)
+> ![Screenshot: Tạo hàm Aurora_TodoHandler](/images/5-Workshop/lambdaTodo.png)
 
 # Bước 2: Cấu hình IAM Role (Full Access to Events)
 Chúng ta cần cấp toàn quyền cloudWatch trên bảng `todo`.
@@ -65,5 +65,5 @@ Chúng ta cần cấp toàn quyền cloudWatch trên bảng `todo`.
 ## Bước 3: Code xử lý (Node.js)
 Quay trở lại giao diện Lambda Function, chúng ta sẽ viết code Node.js để xử lý các thao tác CRUD.
 > **Hình ảnh:**
-> ![Screenshot: Tạo code](/AWS/images/5-Workshop/codeTodo.png)
+> ![Screenshot: Tạo code](/images/5-Workshop/codeTodo.png)
 Sau khi hoàn thành, bấm **Deploy** để lưu lại.
