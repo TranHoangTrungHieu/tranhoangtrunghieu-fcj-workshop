@@ -26,7 +26,7 @@ Key features and services include:
 + **Email Notification System:** Integrated with **Resend** to deliver beautiful HTML-formatted emails to users.
 + **Logic Processing:** Implemented with **AWS Lambda** to handle workflow execution whenever a new event is created.
 
-![Aurora Time Platform Architecture](/images/2-Proposal/aurora-architecture.jpeg)
+![Aurora Time Platform Architecture](/tranhoangtrunghieu-fcj-workshop/images/2-Proposal/aurora-architecture.jpeg)
 
 #### Detailed Sections
 
