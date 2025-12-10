@@ -49,7 +49,7 @@ Chúng ta cần copy các bản ghi từ Resend và dán vào Route 53.
 4. Đặt tên  và chọn quyền **Sending access**.
 5. **Copy và lưu trữ API Key này cẩn thận** .
    > **Hình ảnh:**
-> ![Screenshot: Tạo api key](/Atranhoangtrunghieu-fcj-workshopS/images/5-Workshop/apiKey.png)
+> ![Screenshot: Tạo api key](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/apiKey.png)
 >    > **Hình ảnh:**
 > ![Screenshot: Copy API key](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/key.png)
 

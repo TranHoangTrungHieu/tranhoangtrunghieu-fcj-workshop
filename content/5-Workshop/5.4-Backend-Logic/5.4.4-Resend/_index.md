@@ -39,7 +39,7 @@ We need to copy the DNS records from Resend and add them to Route 53.
     * *Note:* If the Record name ends with your domain, in Route 53 you only need to enter the prefix (e.g., `bounces`), because Route 53 will automatically append the domain.
 
 > **Illustration:**
-> ![Screenshot: Creating a Record in Route 53](/tranhoangtrunghieu-fcj-workshop/images/route53-create-record.png)
+> ![Screenshot: Creating a Record in Route 53](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/record1.png)
 
 # Step 3: Verify and Get API Key
 
@@ -51,7 +51,7 @@ We need to copy the DNS records from Resend and add them to Route 53.
    > **Image:**
 > ![Screenshot: Create API key](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/apiKey.png)
 >    > **Image:**
-> ![Screenshot: Copy API key](/Atranhoangtrunghieu-fcj-workshopS/images/5-Workshop/key.png)
+> ![Screenshot: Copy API key](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/key.png)
 
 > **Illustration:**
 > ![Screenshot: Resend showing successful verification](/tranhoangtrunghieu-fcj-workshop/images/5-Workshop/resend.png)
