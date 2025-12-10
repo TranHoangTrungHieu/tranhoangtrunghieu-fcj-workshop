@@ -26,7 +26,8 @@ Key features and services include:
 + **Email Notification System:** Integrated with **Resend** to deliver beautiful HTML-formatted emails to users.
 + **Logic Processing:** Implemented with **AWS Lambda** to handle workflow execution whenever a new event is created.
 
-![Architecture Diagram](/images/workshop/overview/diagram1.png)
+![Architecture Diagram](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+
 
 
 
